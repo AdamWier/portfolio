@@ -76,9 +76,11 @@ float:left;
   color: #f0e4e6;
   position:fixed;
   width:83%;
+  height: 5%;
   overflow:hidden;
   z-index:1;
-  padding-top:0px
+  padding-top:0px;
+  font-size: 20pt;
 }
 
 #navigation a:link{
@@ -138,4 +140,8 @@ float:left;
     top: 0px;
     left: 0;
     visibility: hidden;
+}
+
+section{
+  height: 75vh
 }
