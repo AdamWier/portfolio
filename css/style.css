@@ -96,8 +96,9 @@ float:left;
   margin-bottom:9%;
   padding: 2% 5% 2% 3%;
   border-radius: 15px 50px;
+  max-height: 88vh;
   position: relative;
-  top: 25%
+  top: 2vh;
 }
 
 :target {
@@ -143,7 +144,13 @@ float:left;
 }
 
 section{
-  height: 100vh
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .preview-pic{
