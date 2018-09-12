@@ -37,10 +37,6 @@ button:active {
   color: #225c55;
 }
 
-.porto-button {
-  width:300px
-}
-
 h2{
   color: #063110;
   font-size: 60px;
@@ -82,6 +78,7 @@ float:left;
   z-index:1;
   padding-top:0px;
   font-size: 20pt;
+  border-radius: 15px 50px;
 }
 
 #navigation a:link{
@@ -94,9 +91,10 @@ float:left;
       text-decoration:none;
 }
 
-.row{
+.element{
   background-color:#f0e4e6;
   margin-bottom:9%;
+  padding: 2% 5% 2% 3%;
   border-radius: 15px 50px;
 
 }
@@ -145,4 +143,8 @@ float:left;
 
 section{
   height: 75vh
+}
+
+.preview-pic{
+  width: 20vw;
 }
