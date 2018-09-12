@@ -2,17 +2,18 @@ body{
   background-color: #d0bb7e;
   color: #540707;
   font-family: Quicksand, Sans-Serif;
-  margin:5% 8% 20% 8%;
+  margin:5% 5% 20% 5%;
   background-image: url(../images/background.jpg);
   background-attachment:fixed;
   background-repeat:no-repeat;
+  background-size: cover;
 }
 
 button{
   background-color: #225c55;
   color: #f0e4e6;
   margin: 8px;
-  width:170px;
+  width:16.5vw;
 }
 
 button a:link {
