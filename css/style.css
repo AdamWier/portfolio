@@ -13,7 +13,8 @@ button{
   background-color: #225c55;
   color: #f0e4e6;
   margin: 8px;
-  width:16.5vw;
+  max-width:16.5vw;
+  min-width: 125git add -apt;
 }
 
 button a:link {
@@ -154,5 +155,5 @@ section{
 }
 
 .preview-pic{
-  width: 20vw;
+  width: 16vw;
 }
