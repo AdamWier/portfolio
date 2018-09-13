@@ -7,14 +7,21 @@ body{
   background-attachment:fixed;
   background-repeat:no-repeat;
   background-size: cover;
+  font-size: 30px;
 }
 
-button{
-  background-color: #225c55;
+.normal-button{
+  background-color: hsl(173, 46%, 25%);
   color: #f0e4e6;
   margin: 8px;
   max-width:16.5vw;
   min-width: 125pt;
+}
+
+.big-button{
+  background-color: #225c55;
+  color: #f0e4e6;
+  margin: 8px;
 }
 
 button a:link {
@@ -43,15 +50,6 @@ h2{
   font-size: 60px;
 }
 
-p {
-  color: #540707;
-  font-size: 30px;  
-}
-
-#nav-row{
-  background-color:transparent;
-}
-
 #navigation ul{
   list-style-type:none;
   margin:0px;
@@ -73,8 +71,8 @@ float:left;
   background-color: #540707;
   color: #f0e4e6;
   position:fixed;
-  width:83%;
-  height: 5%;
+  width: 83%;
+  min-height: 5%;
   overflow:hidden;
   z-index:1;
   padding-top:0px;
@@ -102,15 +100,10 @@ float:left;
   top: 2vh;
 }
 
-:target {
+/*:target {
   padding-top:00px;
   margin-top:00px;
-}
-
-.jumbotron{
-  margin-bottom:9%;
-  background-color:#f0e4e6;
-}
+}*/
 
 .sample{
   text-align:center;
@@ -155,5 +148,5 @@ section{
 }
 
 .preview-pic{
-  width: 16vw;
+  height: 10vh;
 }
