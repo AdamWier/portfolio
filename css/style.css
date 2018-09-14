@@ -12,7 +12,7 @@ body{
 
 .normal-button{
   background-color: hsl(173, 46%, 25%);
-  color: #f0e4e6;
+  color: #E3D8BC;
   margin: 8px;
   max-width:16.5vw;
   min-width: 125pt;
@@ -20,28 +20,30 @@ body{
 
 .big-button{
   background-color: #225c55;
-  color: #f0e4e6;
+  color: #E3D8BC;
   margin: 8px;
+  width: 100%;
 }
 
+
 button a:link {
-  color: #f0e4e6;
+  color: #E3D8BC;
   text-decoration:none;
 }
 
 button a:visited{
-  color: #f0e4e6;
+  color: #E3D8BC;
   text-decoration:none;
 }
 
 button:hover{
-  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-  background-color: #f0e4e6;
+  background-color: #E3D8BC;
   color: #225c55;
 }
 
@@ -69,7 +71,7 @@ float:left;
 #navigation{
   margin-top:-6%;
   background-color: #540707;
-  color: #f0e4e6;
+  color: #E3D8BC;
   position:fixed;
   width: 83%;
   min-height: 5%;
@@ -81,17 +83,17 @@ float:left;
 }
 
 #navigation a:link{
-  color:#f0e4e6;
+  color:#E3D8BC;
     text-decoration:none;
 }
 
 #navigation a:visited{
-  color:#f0e4e6;
+  color:#E3D8BC;
       text-decoration:none;
 } 
 
 .element{
-  background-color:#f0e4e6;
+  background-color:#E3D8BC;
   margin-bottom:9%;
   padding: 2% 5% 2% 3%;
   border-radius: 15px 50px;
@@ -149,4 +151,16 @@ section{
 
 .preview-pic{
   height: 10vh;
+}
+
+.big-button:hover{
+  text-decoration: none;
+}
+
+ul{
+  text-align: left;
+}
+
+.element ul{
+  font-size: 15px;
 }
