@@ -95,15 +95,15 @@ float:left;
   margin-bottom:9%;
   padding: 2% 5% 2% 3%;
   border-radius: 15px 50px;
-  max-height: 88vh;
+  /*max-height: 88vh;*/
   position: relative;
   top: 2vh;
 }
 
-/*:target {
-  padding-top:00px;
+:target {
+  padding-top:6%;
   margin-top:00px;
-}*/
+}
 
 .sample{
   text-align:center;
