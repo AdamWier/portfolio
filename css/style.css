@@ -15,7 +15,7 @@ body{
   color: #E3D8BC;
   margin: 8px;
   max-width:16.5vw;
-  min-width: 125pt;
+  min-width: 120pt;
 }
 
 .big-button{
@@ -69,7 +69,7 @@ float:left;
 }
 
 #navigation{
- /* margin-top:-6%;*/
+  margin-top:-4%;
   background-color: #540707;
   color: #E3D8BC;
   position:fixed;
@@ -95,15 +95,17 @@ float:left;
 .element{
   background-color:#E3D8BC;
   margin-bottom:9%;
-  padding: 2% 5% 2% 3%;
+  padding: 2% 10% 2% 3%;
   border-radius: 15px 50px;
   /*max-height: 88vh;*/
   position: relative;
   top: 2vh;
+  border: solid;
+  border-color: black;
 }
 
 :target {
-  padding-top:6%;
+  padding-top:4%;
   margin-top:00px;
 }
 

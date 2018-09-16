@@ -233,15 +233,23 @@
                 FreeCodeCamp</button></a>
           </div>
           <div class="col-4">
-            <a href="https://github.com/AdamWier" target="_blank"><button type="button" class="btn normal-button"><i class="fab fa-github-square"></i>
+            <a href="https://www.github.com/AdamWier" target="_blank"><button type="button" class="btn normal-button"><i class="fab fa-github-square"></i>
                 GitHub</button></a>
           </div>
         </div>
         <div class="row no-break">
           <div class="col-12 text-center">
-            <a href="mailto:wier.adam@gmail.com"><button type="button" class="btn big-button"><i class="fas fa-at"></i>
-                Email</button></a>
-          </div>
+              <form method="POST" name="contactform" action="contact-form-handler.php">
+              <label for="name">Votre nom : </label><br/>
+              <input type="text" required id="name" placeholder="Votre nom ici"><br/>
+              <label for="email">Votre adresse mail : </label><br/>
+              <input type="email" required id="email" placeholder="Votre adresse mail ici"><br/>
+              <label for="message">Votre message : </label><br/>
+              <textarea id="message"></textarea><br/>            
+            <button type="submit" class="btn big-button"><i class="fas fa-at"></i>
+                Email</button>
+              </form>
+              </div>
         </div>
       </div>
       </div>
