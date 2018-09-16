@@ -174,3 +174,8 @@ ul{
 .top-buffer{
   margin-top: 40pt;
 }
+
+.certificate{
+  width: 100%;
+  padding: 0 20pt 20pt 20pt;
+}
