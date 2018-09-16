@@ -142,13 +142,14 @@ float:left;
 }
 
 section{
-  min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: space-between;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50%;
 }
 
 .preview-pic{
