@@ -13,7 +13,7 @@ body{
 .normal-button{
   background-color: hsl(173, 46%, 25%);
   color: #E3D8BC;
-  margin: 8px;
+  margin: 1vh 0vh 1git vh 0vh;
 }
 
 .big-button{
@@ -215,12 +215,31 @@ ul{
   color: #540707;
 }
 
+
+
 @media only screen and (max-width: 770px){
   .navbar{
     justify-content: left;
   }
   body{
     font-size: 5vw;
+  }
+  .col-4 ul{
+    margin-left: -20pt;
+    font-size: 3vw;
+  }
+  .col-12 h4{
+    font-size: 6vw;
+  }
+  .col-12 h5{
+    font-size: 5vw;
+  }
+  .col-4 h4{
+    font-size: 5vw;
+  }
+  .col-4 h5{
+    font-size: 3.5vw;
+
   }
 }
 
