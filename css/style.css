@@ -179,3 +179,24 @@ ul{
 .certificate{
   padding: 0 20pt 20pt 20pt;
 }
+
+.d-flex{
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-indicators li{
+  background-color: #063110;
+}
+
+.carousel-indicators li.active{
+  background-color: #540707;
+}
+
+.carousel-control-next span{
+  color: #540707;
+}
+
+.carousel-control-prev span{
+  color: #540707;
+}
