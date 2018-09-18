@@ -18,11 +18,17 @@ body{
 
 .big-button{
   background-color: #225c55;
-  color: #E3D8BC;
+  color: rgb(231, 220, 191);
   margin: 8px;
   width: 100%;
 }
 
+#codepen{
+  background-color: rgb(238, 225, 192);
+  border-radius: 15pt;
+  border: solid;
+  border-color: rgb(214, 204, 178);
+}
 
 button a:link {
   color: #E3D8BC;
@@ -203,7 +209,7 @@ ul{
 }
 
 .carousel{
-  min-height: 75vh;
+  min-height: 76vh;
 }
 
 .navbar-toggler-icon{
@@ -229,7 +235,7 @@ ul{
     font-size: 3vw;
   }
   .col-12 h4{
-    font-size: 6vw;
+    font-size: 5.25vw;
   }
   .col-12 h5{
     font-size: 5vw;
@@ -239,7 +245,9 @@ ul{
   }
   .col-4 h5{
     font-size: 3.5vw;
-
+  }
+  .carousel h3{
+    font-size: 5vw
   }
 }
 
