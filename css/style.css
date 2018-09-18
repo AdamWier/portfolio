@@ -14,8 +14,6 @@ body{
   background-color: hsl(173, 46%, 25%);
   color: #E3D8BC;
   margin: 8px;
-  max-width:16.5vw;
-  min-width: 118pt;
 }
 
 .big-button{
@@ -208,15 +206,41 @@ ul{
   min-height: 75vh;
 }
 
-@media only screen and (max-width: 770px ){
+.navbar-toggler-icon{
+  color: #E3D8BC;
+}
+
+.navbar-toggler-icon:active{
+  background-color: #E3D8BC;
+  color: #540707;
+}
+
+@media only screen and (max-width: 770px){
   .navbar{
     justify-content: left;
+  }
+  body{
+    font-size: 5vw;
   }
 }
 
 @media only screen and (min-width: 770px ){
   .navbar{
     justify-content: flex-end;
+  }
+  
+}
+
+@media only screen and (max-width: 992px){
+  .normal-button{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .normal-button{
+    max-width:16.5vw;
+    min-width: 118pt;
   }
 }
 
