@@ -222,7 +222,6 @@ ul{
 }
 
 
-
 @media only screen and (max-width: 770px){
   .navbar{
     justify-content: left;
@@ -269,6 +268,12 @@ ul{
     max-width:16.5vw;
     min-width: 118pt;
   }
+
+  .half-size{
+    min-width: 0;
+    width: 45%;
+  }
+  
 }
 
 /*#first{
