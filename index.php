@@ -1,3 +1,41 @@
+<?php 
+
+$msg = "";
+
+if (filter_has_var(INPUT_POST, "submit")){
+  $name = htmlspecialchars($_POST["name"]);
+  $email = htmlspecialchars($_POST["email"]);
+  $message = htmlentities($_POST["message"]);
+
+  if (!empty($name) && !empty($email) && !empty($message)){
+    if (filter_var($email, FILTER_VALIDATE_EMAIL === false)){
+      $msg = "Merci de revérifier votre email";
+    }
+    else{
+      $toEmail = "wier.adam@gmail.com";
+      $subject = "Contact Form";
+      $body = "<h2>Contact form submitted</h2>
+      <h4>Name</h4><p>$name</p>
+      <h4>Email</h4>$email</p>
+      <h4>Message</h4><p>$message</p>";
+
+      $header ="MIME Version: 1.0"."\r\n";
+      $header .= "Content-type:text/html;charset=UTF-8"."\r\n";
+      $header .= "From: ".$name." <".$email.">";
+      
+      if (mail($toEmail, $subject, $body, $header)){
+        $msg = "Votre email a été enovyé sans problème!";
+      }
+    }
+  }
+  else{
+    $msg = "Merci de remplir tout le formulaire";
+  }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -363,16 +401,19 @@
         </div>
         <div class="row form-group no-break">
           <div class="col-12 text-center">
-              <form method="POST" name="contactform" action="https://formspree.io/wier.adam@gmail.com">
+              <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
               <label for="name">Votre nom&nbsp: </label><br/>
-              <input type="text" class="form-control" required name="name" placeholder="Votre nom ici">
+              <input type="text" class="form-control" required name="name" placeholder="Votre nom ici" value="<?php echo isset($_POST["name"]) ? $name : ""; ?>">
               <label for="email">Votre adresse mail&nbsp: </label>
-              <input type="email" class="form-control" required name="email" placeholder="Votre adresse mail ici">
+              <input type="email" class="form-control" required name="email" placeholder="Votre adresse mail ici" value="<?php echo isset($_POST["email"]) ? $email : ""; ?>">
               <label for="message">Votre message&nbsp: </label>
-              <textarea name="message" class="form-control"></textarea>            
-            <button type="submit" class="btn big-button"><i class="fas fa-at"></i>
+              <textarea name="message" class="form-control" required><?php echo isset($_POST["message"]) ? $message : ""; ?></textarea>            
+            <button type="submit" class="btn big-button" name="submit"><i class="fas fa-at"></i>
                 Email</button>
               </form>
+              <?php if ($msg != ""): ?>
+              <span><?php echo $msg; ?></span>
+              <?php endif; ?>
               </div>
         </div>
       </div>
